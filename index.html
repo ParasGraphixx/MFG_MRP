@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRP Sticker</title>
+	<link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="form-container" id="product-form">
+	<h1>MRP Sticker Form</h1>
+	<p>--- For Manufactured Product ---</p>
+        <label for="code">Code:</label>
+        <input type="text" id="code" value="Product Code">
+        <label for="commodity">Commodity:</label>
+        <input type="text" id="commodity" value="Product Name">
+        <label for="month">Month of Mfg:</label>
+        <select id="month">
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08" selected>August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <label for="year">Year of Mfg:</label>
+        <select id="year">
+            <option value="2202">2022</option>
+            <option value="3202">2023</option>
+            <option value="4202" selected>2024</option>                    
+        </select>
+        <label for="price">MRP:</label>
+        <input type="text" id="price" value="0000">
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" accept="image/*">
+        <button onclick="updateBoxes()">Generate Sticker</button>
+    </div>
+    
+    <div class="grid-container" id="gridContainer">
+        <!-- Boxes will be dynamically added here -->
+    </div>
+	
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
